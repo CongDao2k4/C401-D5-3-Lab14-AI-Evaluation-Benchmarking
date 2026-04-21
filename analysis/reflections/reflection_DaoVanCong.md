@@ -13,3 +13,15 @@
 ## 3. Problem Solving (Kỹ năng giải quyết vấn đề)
 - **Xử lý Rate Limit từ Provider (Lỗi 429):** Khi nhồi 50 test cases vào 2 model cùng lúc, API thường xuyên quá tải. Tôi giải quyết bằng cách áp dụng cơ chế Batching nhỏ và `await asyncio.sleep(5)` sau mỗi cụm, giúp hệ thống không bị nhà cung cấp block giữa chừng.
 - **Đối phó với Hallucination dù Hit Rate cao:** Khi nhận diện ra Root Cause từ phân tích "5 Whys" (sai số CPU, RAM), thay vì chỉ tinh chỉnh prompt, tôi đề xuất việc thay đổi chiến lược Chunking sang phân tách theo ngữ nghĩa (Semantic) để đảm bảo các khối dữ liệu kỹ thuật không bị loãng bởi các đoạn text giới thiệu thừa thãi.
+
+## 4. Minh chứng Commit (Git Evidence)
+- **Branch:** `feat/cong`
+- **Commit Hash:** `7e51e416ff7455026b572086ccaeb9ffaa4f407a`
+- **Message:** `feat: update evaluation reports and cost tracking`
+- **Diff Stat:** `9 files changed, 484 insertions(+), 151 deletions(-)`
+```text
+[feat/cong 7e51e41] feat: update evaluation reports and cost tracking
+ 9 files changed, 484 insertions(+), 151 deletions(-)
+ create mode 100644 analysis/reflections/reflection_DaoVanCong.md
+ create mode 100644 scratch/get_stats.py
+```
