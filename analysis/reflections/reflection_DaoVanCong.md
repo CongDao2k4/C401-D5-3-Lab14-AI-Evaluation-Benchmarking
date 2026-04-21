@@ -1,4 +1,5 @@
-# Individual Reflection - Đào Văn Công
+# Individual Reflection - Đào Văn Công 
+# Student ID - 2A202600031
 
 ## 1. Engineering Contribution (Đóng góp kỹ thuật)
 - **Phát triển Module Metrics (Cost & Retrieval):** Trực tiếp code logic tính toán `Hit Rate` và chi phí hệ thống (Token usage). Trong file `main.py`, tôi đã triển khai code để quy đổi `total_tokens` (6002 tokens) thành chi phí USD, giúp hệ thống theo dõi và báo cáo performance một cách định lượng rõ ràng.
